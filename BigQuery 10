@@ -81,7 +81,7 @@ TB	Saint Barthelemy	1959	2145
 
 
 
-(Q.6) Select crude birth rate and obtain query for 35 and 48 ratios?
+(Q.6) Select crude birth rate and obtain query between 35 and 48 ratios?
 
 SELECT crude_birth_rate
 FROM `bigquery-public-data.census_bureau_international.birth_death_growth_rates`
@@ -150,7 +150,7 @@ f0_
 1950
 
 
-(Q.9) What is maximum year from the selected table corresponding to birth and death growth rates?
+(Q.9) What is the maximum year from the selected table corresponding to birth and death growth rates?
 
 SELECT MAX(year)
 FROM `bigquery-public-data.census_bureau_international.birth_death_growth_rates`
@@ -160,7 +160,7 @@ f0_
 
 
 
-(Q.10) If fertility rates of age specific data and birth and death rates are followed 
+(Q.10) If fertility rates of age specific data and birth and death rates are followed as joins, obtain a query?
 
 select fertility1.country_name,fertility2.crude_birth_rate
 from `bigquery-public-data.census_bureau_international.age_specific_fertility_rates`
